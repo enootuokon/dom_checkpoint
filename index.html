@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/script.css">
+    <title>Document</title>
+    
+
+</head>
+<body>
+    
+
+        <div id="header">
+            <button>|X|</button>
+            <p>Your Shopping Cart</p>
+        </div>
+        <div class="products">
+            <div class="prod prod1">
+                <img src="./res/hairscarfvintage.jpeg" alt="">
+                <div>
+                <p>Vintage Scarfs</p>
+                <p>Ref: 1222</p>
+                </div>
+                <P>Brown</P>
+                <div class="button1">
+                    <button id="decrement">-</button>
+                    <p id="paranumber">0</p>
+                    <button id="increment">+</button>
+                </div>
+                <p id="price">$10.5</p>
+                <div>
+                    <!-- <i class="fa-solid fa-heart" style="color: #d9d9d9;" margin-top:15px;></i> -->
+                    <!-- <img src="./res/heart.png" style="backg: black;" alt=""> -->
+                    <img id="heart" src="./res/heart.svg" style="color: red;" alt="">
+                </div>
+               
+            </div>
+            <div>
+            <button id="button2">x</button>
+            </div>
+
+        </div>
+        
+        
+
+    
+   
+
+</body>
+
+<script>
+
+    let count = document.getElementById("paranumber");
+    let increment = document.getElementById("increment");
+    let decrement = document.getElementById("decrement");
+    let counter = 0;
+
+    increment.addEventListener("click", addproduct)
+    decrement.addEventListener("click", subtractproduct)
+    
+    function addproduct(){
+        counter++;
+        count.textContent = counter;
+    }
+
+    function subtractproduct(){
+        if(counter > 0){
+            counter--;
+            count.textContent = counter;
+        }
+    }
+
+    let heart = document.getElementsByClassName("fa-solid fa-heart");
+    heart.st
+    
+    
+</script>
+<script src="https://kit.fontawesome.com/53215ba4f2.js" crossorigin="anonymous"></script>
+</html>
